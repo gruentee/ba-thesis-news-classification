@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ba-thesis-news-classification.iml" filepath="$PROJECT_DIR$/.idea/ba-thesis-news-classification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fever-allennlp/.idea/fever-allennlp.iml" filepath="$PROJECT_DIR$/fever-allennlp/.idea/fever-allennlp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/naacl-fever/.idea/naacl-fever.iml" filepath="$PROJECT_DIR$/naacl-fever/.idea/naacl-fever.iml" />
+    </modules>
+  </component>
+</project>

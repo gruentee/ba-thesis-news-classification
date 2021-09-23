@@ -1,0 +1,22 @@
+language: python
+services:
+  - docker
+python:
+  - "3.6"
+stages:
+    - before_install
+    - install
+    - name: after_success
+      if: branch = master
+before_install:
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+script:
+  - echo "No script"
+install:
+  - docker build -t feverai/sample .
+  - docker tag feverai/sample feverai/sample:build-$TRAVIS_BUILD_NUMBER
+  - docker push feverai/sample:build-$TRAVIS_BUILD_NUMBER
+after_success:
+  - docker tag feverai/sample feverai/sample:latest
+  - docker push feverai/sample:latest
+  - echo "Done"
